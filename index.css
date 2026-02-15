@@ -1,0 +1,224 @@
+/* =============================
+   GLOBAL STYLING
+============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+/* =============================
+   HEADER
+============================= */
+
+header {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    opacity: 0.9;
+    margin-top: 8px;
+}
+
+/* =============================
+   MAIN CONTAINER
+============================= */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* =============================
+   GLASS EFFECT CARD
+============================= */
+
+.form-section,
+.display-section {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    flex: 1;
+}
+
+/* =============================
+   FORM STYLING
+============================= */
+
+.form-section h2 {
+    margin-bottom: 15px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+}
+
+form input:focus {
+    box-shadow: 0 0 8px #fff;
+}
+
+/* Modern Button */
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #00c6ff;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+.input-group {
+    margin-bottom: 10px;
+}
+
+.error {
+    color: #ff4d4d;
+    font-size: 12px;
+    display: block;
+    min-height: 16px;
+}
+
+/* =============================
+   STUDENT CARDS
+============================= */
+
+.display-section h2 {
+    margin-bottom: 15px;
+}
+
+.student-list {
+    max-height: 450px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+/* Custom Scrollbar */
+.student-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.student-list::-webkit-scrollbar-thumb {
+    background: #00c6ff;
+    border-radius: 10px;
+}
+
+/* Card Design */
+.student-card {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.student-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.student-info p {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+/* Buttons */
+.student-card button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s ease;
+}
+
+.edit-btn {
+    background: #f39c12;
+    color: white;
+}
+
+.edit-btn:hover {
+    background: #d35400;
+}
+
+.delete-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+/* =============================
+   RESPONSIVE DESIGN
+============================= */
+
+/* Mobile */
+@media (max-width: 640px) {
+    .container {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 641px) and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+
+
+
+
+
